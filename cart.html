@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+	<title> Sneakers
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+</head>
+<body>
+	<div class="loading-icon">
+	
+	</div>
+	<div class="container-fluid">
+		<div class='top-bar row'>
+			<div class="col-md-6 top-bar-left">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 top-bar-right">
+				<ul class="nav justify-content-end">
+					<li class="nav-item cart-link">
+						<a class="nav-link cart-select" href="javascript:void(0)">
+							<span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng
+							<span class="cart__count"> (2) </span>
+						</a>
+						<div class='dropdown-nav popup__cart-body'>
+
+							<div class='view-item cart__list-item'>
+								<div class="media">
+									<a href="javascript:void(0)" class='remove-icon cart-popup__remove-icon remove-product-item'>
+										<span class="glyphicon glyphicon-remove"></span>
+									</a>
+									<img class="" src="images/11.jpg" alt="image" width="45px">
+									<div class="media-body">
+										<p class="mt-0 media__product-title">
+											<a href="detail.html">EVERYN SHOES</a>
+										</p>
+										<p class='product-price product-price__popup'>
+											<span>Size: 35</span> |
+											<span class=''>180000</span> * 1</p>
+									</div>
+								</div>
+								<div class="media">
+									<a href="javascript:void(0)" class='remove-icon cart-popup__remove-icon remove-product-item'>
+										<span class="glyphicon glyphicon-remove"></span>
+									</a>
+									<img class="" src="images/12.jpg" alt="image" width="45px">
+									<div class="media-body">
+										<p class="mt-0 media__product-title">
+											<a href="detail.html">Bitis Hunter Nam Black</a>
+										</p>
+										<p class='product-price product-price__popup'>
+											<span>Size: 39</span> |
+											<span class=''>680000</span> * 1</p>
+									</div>
+								</div>
+							</div>
+							<hr class="hr--border-cart-popup"></hr>
+							<div class='dropdown-cart__caption'>
+								<div class='cart-total text-right'>
+									<span>Tổng tiền:</span>
+									<span>
+										860,000 vnđ
+									</span>
+								</div>
+								<hr class="hr--border-cart-popup"></hr>
+								<div class='text-center dropdown-cart__bottom'>
+									<a href="cart.html" class='btn__link btn__link-dropdow-cart'>
+										<span class="glyphicon glyphicon-search"></span> Chi tiết</a>
+									<a href="javascript:void(0)" class='btn__link btn__link-dropdow-cart close_popup_cart'>Tiếp tục mua hàng</a>
+								</div>
+							</div>
+						</div>
+						<!-- end-cart-body-->
+					</li>
+					<li class="nav-item login-link">
+						<a class="nav-link small-hidden login-select" href="javascript:void(0)">Đăng nhập</a>
+						<div class="dropdown-nav popup__login-body small-hidden ">
+							<form action="dang-nhap" method="post" id='form-login'>
+								<p class="login-title text-center">Đăng nhập</p>
+								<div class="field__input-wrapper">
+									<input type="text" name="txtEmail" placeholder="Email" class='input-email'>
+									<p class="errors alert">* Bạn chưa nhập email</p>
+								</div>
+								<div class="field__input-wrapper">
+									<input type="password" name="txtPassword" placeholder="Mật khẩu" class="input-password">
+									<p class="errors alert">* Bạn chưa nhập mật khẩu</p>
+								</div>
+								<div class="field__input-wrapper forgot-password">
+									<p>
+										<a href="#">Quên mật khẩu?</a>
+									</p>
+								</div>
+								<div class="field__input-wrapper">
+									<p class="login-messages alert">Ban chua nhap</p>
+									<input type="submit" name="login" value="Đăng nhập" class="btn__submit">
+								</div>
+
+							</form>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link small-hidden" href="register.html">Đăng kí</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- top-bar -->
+		<div class="row clearfix" id="header-logo">
+			<div class='col-12 col-sm-12 col-md-6 col-lg-6 ' id='header-logo-left'>
+				<p class='p-logo'>
+					<a href="">ShopGiay</a>
+				</p>
+			</div>
+
+			<div class='col-12 col-sm-12 col-md-6 col-lg-6 header-right'>
+				<div class="search-box">
+					<div class="form-input-search">
+						<input type="text" name="txtKeyword" placeholder="Nhập từ khóa cần tìm kiếm" class="search-input">
+						<span class='icon-search'>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="search-result">
+					</div>
+					<div class="text-example">
+						<span>ví dụ: giày thể thao, converse</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header-Logo -->
+		<nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light">
+		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto menu-list">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Nam
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="category.html">Sneakers</a>
+							<a class="dropdown-item" href="category.html">Boots</a>
+							<a class="dropdown-item" href="category.html">Loafers</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Nữ
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="category.html">Sneakers</a>
+							<a class="dropdown-item" href="category.html">Boots</a>
+							<a class="dropdown-item" href="category.html">Loafers</a>
+						</div>
+					</li>
+		
+					<li class="nav-item">
+						<a class="nav-link" href="">Giới thiệu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Liên Hệ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id='register-nav-link'>Đâng kí</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id='login-nav-link'>Đăng nhập</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!--end-nav-->
+		<div id='wrapper'>
+			<div class="row">
+				<div class="col-12 col-sm-2 col-md-2 col-lg-2 nav-left small--text-center">
+					<hr class="hr--border-top small-hidden"></hr>
+					<nav class="nav__sidebar">
+						<ul>
+							<li class=''>
+								<a href='javascript:void(0)'>Nam
+									<span class='glyphicon glyphicon-chevron-down'></span>
+								</a>
+								<ul>
+									<li class='active-li'>
+										<a href='category.html'>Sneakers </a>
+									</li>
+									<li class=''>
+										<a href='category.html'>Boots </a>
+									</li>
+									<li class=''>
+										<a href='category.html'>Loafers </a>
+									</li>
+								</ul>
+							</li>
+							<li class=''>
+								<a href='javascript:void(0)'>Nữ
+									<span class='glyphicon glyphicon-chevron-down'></span>
+								</a>
+								<ul>
+									<li class=''>
+										<a href='category.html'>Sneakers </a>
+									</li>
+									<li class=''>
+										<a href='category.html'>Boots </a>
+									</li>
+									<li class=''>
+										<a href='category.html'>Loafers </a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<!--end-nav__sidebar-->
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-10 col-lg-10 ">
+					<div class='main-content'>
+						<hr class="hr--border-top small-hidden"></hr>
+						<div class=''>
+							<nav class="breadcrumb-nav small--text-center" aria-label="You are here">
+								<a href="index.html" itemprop="url" title="Back to the homepage">
+									<span itemprop="title">Home</span>
+								</a>
+								<span class="breadcrumb-nav__separator" aria-hidden="true">›</span>
+								<a href="cart.html">Giỏ hàng</a>
+							</nav>
+						</div>
+
+						<div class='block_wrap row'>
+							<table class='responsive-table table--no-border'>
+								<thead class='cart__row small-hidden'>
+									<tr>
+										<th class="text-left cart__table-cell-image">Sản phẩm</th>
+										<th class="text-center cart__table-cell--meta"></th>
+										<th class="text-center cart__table-cell--price">Đơn giá</th>
+										<th class="text-center cart__table-cell--quantity">Số lượng</th>
+										<th class="text-right cart__table-cell--total-price">Tổng</th>
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr class='responsive-table__row'>
+
+										<td class="text-left cart__table-cell-image">
+											<img src="images/11.jpg" width='100%' />
+										</td>
+										<td class="cart__table-cell--meta small--text-center">
+											<p>
+												<a href="detail.html">
+													<h6>EVERYN SHOES</h6>
+												</a>
+												<small>Size: 35</small>
+											</p>
+											<p>
+												<a href="javascript:void(0)" class='btn-del__cart-item remove-product-item'  >Remove</a>
+											</p>
+										</td>
+										<td class="cart__table-cell--price medium-up--text-center" data-label='Đơn giá'>180,000 vnđ</td>
+										<td class='cart__table-cell--quantity medium-up--text-center' data-label='Số lượng'>
+											<select class="single-option-selector quantity-selector" data-option="option1" >
+												<option value="1" selected>1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+											</select>
+										</td>
+										<td class='cart__table-cell--quantity text-right' data-label="Tổng">180,000 vnđ</td>
+									</tr>
+
+									<tr class='responsive-table__row'>
+
+										<td class="text-left cart__table-cell-image">
+											<img src="images/14.jpg" width='100%' />
+										</td>
+										<td class="cart__table-cell--meta small--text-center">
+											<p>
+												<a href="detail.html">
+													<h6>Biti&#039;s Hunter Nam Black</h6>
+												</a>
+												<small>Size: 39</small>
+											</p>
+											<p>
+												<a href="javascript:void(0)" class='btn-del__cart-item remove-product-item' >Remove</a>
+											</p>
+										</td>
+										<td class="cart__table-cell--price medium-up--text-center" data-label='Đơn giá'>680,000 vnđ</td>
+										<td class='cart__table-cell--quantity medium-up--text-center' data-label='Số lượng'>
+											<select class="single-option-selector quantity-selector" data-option="option1" >
+												<option value="1" selected>1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+											</select>
+										</td>
+										<td class='cart__table-cell--quantity text-right' data-label="Tổng">680,000 vnđ</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class='cart-footer text-right'>
+
+								<p class='small--text-center'>
+									<span>Tổng tiền: </span>
+									<span class='span__total_price'>860,000 vnđ</span>
+								</p>
+								<div class='cart-bottom-footer'>
+									<a href="checkout" class='btn__link btn__link-cart'>Thanh toán</a>
+									<a href="index.html" class='btn__link btn__link-cart'>Tiếp tục mua hàng</a>
+								</div>
+							</div>
+						</div>
+						<!--end-block_wrap-->
+						<!--product-different-->
+					</div>
+					<!--end-main-content-->
+				</div>
+			</div>
+			<!--end-row-->
+		</div>
+		<!--end-wrapper-->
+
+		<div id='footer' class="">
+			Trungduy@1/2018
+		</div>
+	</div>
+	<script type="text/javascript" src='js/jquery.min.js'></script>
+	<script type="text/javascript" src='js/bootstrap.min.js'></script>
+	<script src='js/elevatezoom/jquery.elevatezoom.js'></script>
+	<script type="text/javascript" src='js/myscript.js'></script>
+</body>
+
+</html>

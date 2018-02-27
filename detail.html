@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+    <title> Sneakers
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link href="css/glyphicons.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
+<body>
+    <div class="loading-icon">
+       
+    </div>
+    <div class="container-fluid">
+        <div class='top-bar row'>
+            <div class="col-md-6 top-bar-left">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 top-bar-right">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item cart-link">
+                        <a class="nav-link cart-select" href="javascript:void(0)">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng
+                            <span class="cart__count"> (2) </span>
+                        </a>
+                        <div class='dropdown-nav popup__cart-body'>
+
+                            <div class='view-item cart__list-item'>
+                                <div class="media">
+                                    <a href="javascript:void(0)" class='remove-icon cart-popup__remove-icon remove-product-item'>
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <img class="" src="images/11.jpg" alt="image" width="45px">
+                                    <div class="media-body">
+                                        <p class="mt-0 media__product-title">
+                                            <a href="detail.html">EVERYN SHOES</a>
+                                        </p>
+                                        <p class='product-price product-price__popup'>
+                                            <span>Size: 35</span> |
+                                            <span class=''>180000</span> * 1</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a href="javascript:void(0)" class='remove-icon cart-popup__remove-icon remove-product-item'>
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <img class="" src="images/12.jpg" alt="image" width="45px">
+                                    <div class="media-body">
+                                        <p class="mt-0 media__product-title">
+                                            <a href="detail.html">Biti&#039;s Hunter Nam Black</a>
+                                        </p>
+                                        <p class='product-price product-price__popup'>
+                                            <span>Size: 39</span> |
+                                            <span class=''>680000</span> * 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr--border-cart-popup"></hr>
+                            <div class='dropdown-cart__caption'>
+                                <div class='cart-total text-right'>
+                                    <span>Tổng tiền:</span>
+                                    <span>
+                                        860,000 vnđ
+                                    </span>
+                                </div>
+                                <hr class="hr--border-cart-popup"></hr>
+                                <div class='text-center dropdown-cart__bottom'>
+                                    <a href="cart.html" class='btn__link btn__link-dropdow-cart'>
+                                        <span class="glyphicon glyphicon-search"></span> Chi tiết</a>
+                                    <a href="javascript:void(0)" class='btn__link btn__link-dropdow-cart close_popup_cart'>Tiếp tục mua hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end-cart-body-->
+                    </li>
+                    <li class="nav-item login-link">
+                        <a class="nav-link small-hidden login-select" href="javascript:void(0)">Đăng nhập</a>
+                        <div class="dropdown-nav popup__login-body small-hidden ">
+                            <form action="dang-nhap" method="post" id='form-login'>
+                                <p class="login-title text-center">Đăng nhập</p>
+                                <div class="field__input-wrapper">
+                                    <input type="text" name="txtEmail" placeholder="Email" class='input-email'>
+                                    <p class="errors alert">* Bạn chưa nhập email</p>
+                                </div>
+                                <div class="field__input-wrapper">
+                                    <input type="password" name="txtPassword" placeholder="Mật khẩu" class="input-password">
+                                    <p class="errors alert">* Bạn chưa nhập mật khẩu</p>
+                                </div>
+                                <div class="field__input-wrapper forgot-password">
+                                    <p>
+                                        <a href="#">Quên mật khẩu?</a>
+                                    </p>
+                                </div>
+                                <div class="field__input-wrapper">
+                                    <p class="login-messages alert">Ban chua nhap</p>
+                                    <input type="submit" name="login" value="Đăng nhập" class="btn__submit">
+                                </div>
+
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link small-hidden" href="register.html">Đăng kí</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- top-bar -->
+        <div class="row clearfix" id="header-logo">
+            <div class='col-12 col-sm-12 col-md-6 col-lg-6 ' id='header-logo-left'>
+                <p class='p-logo'>
+                    <a href="#">ShopGiay</a>
+                </p>
+            </div>
+
+            <div class='col-12 col-sm-12 col-md-6 col-lg-6 header-right'>
+                <div class="search-box">
+                    <div class="form-input-search">
+                        <input type="text" name="txtKeyword" placeholder="Nhập từ khóa cần tìm kiếm" class="search-input">
+                        <span class='icon-search'>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="search-result">
+                    </div>
+                    <div class="text-example">
+                        <span>ví dụ: giày thể thao, converse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header-Logo -->
+        <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto menu-list">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Nam
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Sneakers</a>
+                            <a class="dropdown-item" href="category.html">Boots</a>
+                            <a class="dropdown-item" href="category.html">Loafers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Nữ
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Sneakers</a>
+                            <a class="dropdown-item" href="category.html">Boots</a>
+                            <a class="dropdown-item" href="category.html">Loafers</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id='register-nav-link'>Đâng kí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id='login-nav-link'>Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--end-nav-->
+        <div id='wrapper'>
+            <div class="row">
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 nav-left small--text-center">
+                    <hr class="hr--border-top small-hidden"></hr>
+                    <nav class="nav__sidebar">
+                        <ul>
+                            <li class=''>
+                                <a href='javascript:void(0)'>Nam
+                                    <span class='glyphicon glyphicon-chevron-down'></span>
+                                </a>
+                                <ul>
+                                    <li class='active-li'>
+                                        <a href='category.html'>Sneakers </a>
+                                    </li>
+                                    <li class=''>
+                                        <a href='category.html'>Boots </a>
+                                    </li>
+                                    <li class=''>
+                                        <a href='category.html'>Loafers </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=''>
+                                <a href='javascript:void(0)'>Nữ
+                                    <span class='glyphicon glyphicon-chevron-down'></span>
+                                </a>
+                                <ul>
+                                    <li class=''>
+                                        <a href='category.html'>Sneakers </a>
+                                    </li>
+                                    <li class=''>
+                                        <a href='category.html'>Boots </a>
+                                    </li>
+                                    <li class=''>
+                                        <a href='category.html'>Loafers </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--end-nav__sidebar-->
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10 ">
+                    <div class='main-content'>
+                        <hr class="hr--border-top small-hidden"></hr>
+
+                        <nav class="breadcrumb-nav small--text-center">
+                            <a href="index.html">Home</a>
+                            <span class="breadcrumb-nav__separator" aria-hidden="true">›</span>
+                            <a href="#">Nữ</a>
+                            <span class="breadcrumb-nav__separator" aria-hidden="true">›</span>
+                            <a href="category.html">Boots</a>
+                            <span class="breadcrumb-nav__separator" aria-hidden="true">›</span>
+                            <a href="detail.html">Adidas Boots</a>
+                        </nav>
+
+                        <div class='block_wrap row product-single'>
+                            <div class="col-12 col-sm-12 col-md-7 col-lg-6 product-single__block-left">
+                                <span class="badge badge--sale">
+                                    <span>Sale</span>
+                                </span>
+                                <img id='img_01' class="img-view" src="images/11.jpg" data-zoom-image='images/anh11.jpg' />
+                                <div id="gallery_01">
+                                    <a href="#" data-image="images/11.jpg" data-zoom-image="images/11.jpg">
+                                        <img id="img_01" class='thumb-image' src="images/11.jpg" width="100" />
+                                    </a>
+
+                                    <a href="#" data-image="images/anh12.jpg" data-zoom-image="images/anh12.jpg">
+                                        <img id="img_01" class='thumb-image' src="images/12.jpg" width="100" />
+                                    </a>
+
+                                    <a href="#" data-image="images/13.jpg" data-zoom-image="images/13.jpg">
+                                        <img id="img_01" class='thumb-image' src="images/13.jpg" width="100" />
+                                    </a>
+
+                                    <a href="#" data-image="images/14.jpg" data-zoom-image="images/14.jpg">
+                                        <img id="img_01" class='thumb-image' src="images/14.jpg" width="100" />
+                                    </a>
+
+                                    <a href="#" data-image="images/15.jpg" data-zoom-image="images/15.jpg">
+                                        <img id="img_01" class='thumb-image' src="images/15.jpg" width="100" />
+                                    </a>
+
+                                    <a href="#" data-image="images/16.jpg" data-zoom-image="images/16.jpg">
+                                        <img id="img_01" class='thumb-image' src="images/16.jpg" width="100" />
+                                    </a>
+
+                                    <a href="#" data-image="images/14.jpg" data-zoom-image="images/14.jpg">
+                                        <img id="img_01" class='thumb-image' src="images/14.jpg" width="100" />
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-5 col-lg-6 product-content">
+                                <h3 class='product-name-detail'>Lorem ipsum dolor sit ame</h3>
+                                <p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu auctor odio. Pellentesque
+                                        imperdiet nulla luctus mi suscipit euismod. Curabitur leo ante, elementum et quam
+                                        sed, consequat elementum sem</p>
+                                </p>
+                                <p class="product-price-detail">
+                                    <span class="product__price-on-sale">180,000</span>
+                                    <s class="product__price--compare">200,000</s> vnđ
+
+                                </p>
+                                <div class="slelect-size-box">
+                                    <div class='selector-wrapper'>
+                                        <span>
+                                            <label for='product__select-size'>Size: </label>
+                                        </span>
+                                        <select class="single-option-selector" data-option="option1" id="product__select-size">
+                                            <option value="1">35</option>
+                                            <option value="2">36</option>
+                                            <option value="3">37</option>
+                                            <option value="4">38</option>
+                                            <option value="5">39</option>
+                                        </select>
+                                    </div>
+                                    <div class='selector-wrapper'>
+                                        <span>
+                                            <label for='product__select-quantity'>Số lượng: </label>
+                                        </span>
+                                        <select class="single-option-selector" data-option="option1" id="product__select-quantity">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="product-submit-cart">
+                                    <span class='a__submit'>
+                                        <a href="javascript:void(0)" data-product-id='22' class='btn__link btn__link-cart btn__add-to-cart' data-toggle="modal" data-target=".bd-example-modal-lg">
+                                        Mua hàng
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+                                    </span>
+                                    <!-- data-toggle="modal" data-target=".bd-example-modal-lg" -->
+                                </div>
+                            </div>
+                        </div>
+                        <!--end-block_wrap-->
+                        <div class="modal fade bd-example-modal-lg" id='myModal' tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Thêm vào giỏ hàng thành công</h5>
+                                        <button type="button" class="close btn__close-icon" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-1-4 hidden-small">
+                                                    <img class='cart__image-product' src="images/11.jpg" />
+                                                </div>
+                                                <div class="col-1-4 hidden-small">
+                                                    <div class="cart__info-product">
+                                                        <h5>Adidas Boots</h5>
+                                                        <p class="light cart__unit_price">196.000 vnđ</p>
+                                                        <p class="light cart__size">Size: 41</p>
+                                                        <p class="light cart__qantity">Số lượng: 1</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-1-5">
+                                                    <div class="cart__total-info">
+                                                        <div class="cart__total-header hidden-small">
+                                                            <h5 class="light">sản phẩm</h5>
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="text-left">Tổng giá</td>
+                                                                    <td class="text-right cart__total-price">196.000 vnđ</td>
+                                                                </tr>
+                                                                <tr class="shipping-price">
+                                                                    <td class="text-left">Chi phí ship</td>
+                                                                    <td class="text-right cart__ship-price">0 vnđ</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-left">Tổng cộng</td>
+                                                                    <td class="text-right cart__total">196.000 vnđ</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="cart__total-footer">
+                                                            <a href="cart.html" class="btn__link btn__checkout uppercase ">Chi tiết
+                                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                                            </a>
+                                                            <a href="checkout.html" class="btn__link btn__checkout uppercase ">Thanh toán</a>
+                                                        </div>
+
+                                                    </div>
+                                                    <!--end-cart-total-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--modal-body-->
+                                </div>
+                                <!--modal-content-->
+                            </div>
+                        </div>
+                        <!--end-bootstrap-modal-->
+
+                        <div class='product-description'>
+                            <ul>
+                                <li>Curabitur leo ante</li>
+                                <li>Reinforced rubber toe; Perforated 3-Stripes</li>
+                                <li>Leather collar and sockliner</li>
+                                <li>Metallic linear Trefoil logo on lateral side</li>
+                                <li>Enjoy the comfort and performance of OrthoLite&reg; sockliner; Debossed logo on sockliner;
+                                    Nubuck leather heel patch</li>
+                                <li>Vulcanized rubber outsole</li>
+                                <li>Main materials: Leather upper / Leather lining / Rubber outsole</li>
+                                <li>Imported</li>
+                            </ul>
+
+                            <ul>
+                                <li>Product code: CQ2004</li>
+                                <li>Product color: Running White / Running White / Ash Pearl</li>
+                            </ul>
+                        </div>
+                        <hr class="hr--border-top small-hidden "></hr>
+                        <div class='product--different block_wrap row'>
+
+                            <div class="product-item ">
+                                <div class="thumbnail ">
+                                    <span class="badge badge--new ">
+                                        <span>New</span>
+                                    </span>
+                                    <a href="detail.html">
+                                        <img src="images/13.jpg" alt="... ">
+                                    </a>
+                                    <div class="product-caption text-left ">
+                                        <p class='product-title'>
+                                            <a href="detail.html">Lorem ipsum</a>
+                                        </p>
+                                        <p class='product-price'>
+                                            <span> 200,000 vnđ</span>
+                                        </p>
+                                        <a href="detail.html" class="product-btn__a " role="button ">
+                                            <span class="glyphicon glyphicon-search "></span> Chi tiết</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--productdifferent-->
+                    </div>
+                    <!--end-main-content-->
+                </div>
+                <!--end-row-->
+            </div>
+            <!--end-wrapper-->
+        </div>
+
+        <div id='footer'>
+            Trungduy@1/2018
+        </div>
+    </div>
+    <script type="text/javascript " src='js/jquery.min.js'></script>
+    <script type="text/javascript " src='js/bootstrap.min.js'></script>
+    <script src='js/elevatezoom/jquery.elevatezoom.js'></script>
+    <script type="text/javascript " src='js/myscript.js'></script>
+
+</body>
+
+</html>
