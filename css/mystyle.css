@@ -207,9 +207,7 @@ a:hover{
 ul{
 	list-style-type: none;
 }
-h4, h5{
-	/*font-family: TimesNewRoman;*/
-}
+
 input{
 	max-width: 100%;
     background-color: #f4f4f4;
@@ -257,29 +255,7 @@ button:hover{
   display: none;
   filter: alpha(opacity=80); /* For IE8 and earlier */
 }
-.loading-icon{
-/*	width: 100%;
-	height: 100%;*/
-	/*display: none;*/
-	/*background-color: #fff;
-	position: absolute;
-	opacity: 0.8;
-	z-index: 99;
-	text-align: center;*/
-}
 
-.loading-icon img{
-	/*width: 100px;
-	vertical-align: middle;*/
-	/*display: none;*/
-}
-
-.loading-icon:before {    
-  /*  content: ' ';
-    display: inline-block;
-    vertical-align: middle; 
-    height: 100%;*/
-}
 /***hiden***/
 .alert{
 	padding: 5px 15px;
@@ -354,13 +330,13 @@ button:hover{
 .navbar-light .navbar-nav .nav-link:hover{
 	color: #339999;
 	-web-kit-transition: 0.3s;
-	-moz-transitian: 0.3s;
+	-moz-transition: 0.3s;
 	transition: 0.3s;
 }
 a:hover{
 	color: #339999;
 	-web-kit-transition: 0.3s;
-	-moz-transitian: 0.3s;
+	-moz-transition: 0.3s;
 	transition: 0.3s;
 }
 /*END_NAV*/
@@ -1372,4 +1348,44 @@ p.login-title{
 	display: block;
 	width: 100%;
 	text-align: center;
+}
+
+/* user-nav-css */
+.popup__user-nav{
+	width: 170px;
+	left: -100px;
+	padding: 0px;
+}
+.popup__user-nav li:last-child{
+	border-top: 1px solid #ddd;
+}
+.popup__user-nav a{
+	display: block;
+	padding: 0.5rem;
+	font-size: 0.88em;
+}
+.popup__user-nav li:hover a{
+	color: #fff;
+	-web-kit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	
+}
+.popup__user-nav li:hover{
+	background: #0366d6;
+}
+
+.footer_profile{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.btn__small{
+	padding: 7px 10px;
+
+}
+.m-center{
+	margin: 10px auto;
+}
+.mg-20{
+	margin: 20px 0px;
 }

@@ -3,6 +3,7 @@ $(document).ready(function () {
 	$(".cart-select").click(function (e) {
 		$('.popup__cart-body').fadeToggle();
 		$('.popup__login-body').fadeOut();
+		$(".popup__user-nav").fadeOut();
 		if ($(".cart__list-item").height() < 200) {
 			$(".cart__list-item").css('overflow-y', "hidden");
 		} else {
@@ -41,6 +42,12 @@ $(document).ready(function () {
 	//show cart detail
 	$('.show-siderbar__main').click(function () {
 		$('.sidebar__main').slideToggle();
+	});
+
+	// hien nav user
+	$(".show-user-nav").click(function (){
+		$(".popup__user-nav").fadeToggle();
+		$(".popup__cart-body").fadeOut();
 	});
 
 	//nav

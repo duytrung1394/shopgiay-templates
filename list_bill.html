@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="vi">
+    <title> Sneakers
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="loading-icon">
+
+    </div>
+    <div class="container-fluid">
+        <div class='top-bar row'>
+            <div class="col-md-6 top-bar-left">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 top-bar-right">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item cart-link">
+                        <a class="nav-link cart-select" href="javascript:void(0)">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng
+                            <span class="cart__count"> (2) </span>
+                        </a>
+                        <div class='dropdown-nav popup__cart-body'>
+
+                            <div class='view-item cart__list-item'>
+                                <div class="media">
+                                    <a href="javascript:void(0)" class='remove-icon cart-popup__remove-icon remove-product-item'>
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <img class="" src="images/11.jpg" alt="image" width="45px">
+                                    <div class="media-body">
+                                        <p class="mt-0 media__product-title">
+                                            <a href="detail.html">EVERYN SHOES</a>
+                                        </p>
+                                        <p class='product-price product-price__popup'>
+                                            <span>Size: 35</span> |
+                                            <span class=''>180000</span> * 1</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a href="javascript:void(0)" class='remove-icon cart-popup__remove-icon remove-product-item'>
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <img class="" src="images/12.jpg" alt="image" width="45px">
+                                    <div class="media-body">
+                                        <p class="mt-0 media__product-title">
+                                            <a href="detail.html">Biti&#039;s Hunter Nam Black</a>
+                                        </p>
+                                        <p class='product-price product-price__popup'>
+                                            <span>Size: 39</span> |
+                                            <span class=''>680000</span> * 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr--border-cart-popup"></hr>
+                            <div class='dropdown-cart__caption'>
+                                <div class='cart-total text-right'>
+                                    <span>Tổng tiền:</span>
+                                    <span>
+                                        860,000 vnđ
+                                    </span>
+                                </div>
+                                <hr class="hr--border-cart-popup"></hr>
+                                <div class='text-center dropdown-cart__bottom'>
+                                    <a href="cart.html" class='btn__link btn__link-dropdow-cart'>
+                                        <span class="glyphicon glyphicon-search"></span> Chi tiết</a>
+                                    <a href="javascript:void(0)" class='btn__link btn__link-dropdow-cart close_popup_cart'>Tiếp tục mua hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end-cart-body-->
+                    </li>
+                    <!-- <li class="nav-item login-link">
+						<a class="nav-link small-hidden login-select" href="javascript:void(0)">Đăng nhập</a>
+						<div class="dropdown-nav popup__login-body small-hidden ">
+							<form action="dang-nhap" method="post" id='form-login'>
+								<p class="login-title text-center">Đăng nhập</p>
+								<div class="field__input-wrapper">
+									<input type="text" name="txtEmail" placeholder="Email" class='input-email'>
+									<p class="errors alert">* Bạn chưa nhập email</p>
+								</div>
+								<div class="field__input-wrapper">
+									<input type="password" name="txtPassword" placeholder="Mật khẩu" class="input-password">
+									<p class="errors alert">* Bạn chưa nhập mật khẩu</p>
+								</div>
+								<div class="field__input-wrapper forgot-password">
+									<p>
+										<a href="#">Quên mật khẩu?</a>
+									</p>
+								</div>
+								<div class="field__input-wrapper">
+									<p class="login-messages alert">Ban chua nhap</p>
+									<input type="submit" name="login" value="Đăng nhập" class="btn__submit">
+								</div>
+
+							</form>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link small-hidden" href="register.html">Đăng kí</a>
+					</li> -->
+                    <li class="nav-item login-link">
+                        <a class="nav-link show-user-nav" href="javascript:void(0)">user test</a>
+                        <div class="dropdown-nav popup__user-nav">
+                            <ul>
+                                <li>
+                                    <a href="user_profile.html">Thông tin cá nhân</a>
+                                </li>
+                                <li>
+                                    <a href="edit_password.html">Đổi mật khẩu</a>
+                                </li>
+                                <li>
+                                    <a href="list_bill.html">Danh sách đơn hàng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- top-bar -->
+        <div class="row clearfix" id="header-logo">
+            <div class='col-12 col-sm-12 col-md-6 col-lg-6 ' id='header-logo-left'>
+                <p class='p-logo'>
+                    <a href="">ShopGiay</a>
+                </p>
+            </div>
+
+            <div class='col-12 col-sm-12 col-md-6 col-lg-6 header-right'>
+                <div class="search-box">
+                    <div class="form-input-search">
+                        <input type="text" name="txtKeyword" placeholder="Nhập từ khóa cần tìm kiếm" class="search-input">
+                        <span class='icon-search'>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="search-result">
+                    </div>
+                    <div class="text-example">
+                        <span>ví dụ: giày thể thao, converse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header-Logo -->
+        <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto menu-list">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Nam
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Sneakers</a>
+                            <a class="dropdown-item" href="category.html">Boots</a>
+                            <a class="dropdown-item" href="category.html">Loafers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Nữ
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Sneakers</a>
+                            <a class="dropdown-item" href="category.html">Boots</a>
+                            <a class="dropdown-item" href="category.html">Loafers</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id='register-nav-link'>Đâng kí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id='login-nav-link'>Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--end-nav-->
+        <div id='wrapper'>
+            <div class="row">
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 nav-left small--text-center">
+                    <hr class="hr--border-top small-hidden"></hr>
+                    <nav class="nav__sidebar">
+                        <ul>
+                            <li>
+                                <a href="user_profile.html">Thông tin cá nhân</a>
+                            </li>
+                            <li>
+                                <a href="change_password.html">Đổi mật khẩu</a>
+                            </li>
+                            <li>
+                                <a href="list_bill.html">Danh sách đơn hàng</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--end-nav__sidebar-->
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10 ">
+                    <div class='main-content'>
+                        <hr class="hr--border-top small-hidden"></hr>
+                        <div class=''>
+                            <nav class="breadcrumb-nav small--text-center" aria-label="You are here">
+                                <a href="index.html" itemprop="url" title="Back to the homepage">
+                                    <span itemprop="title">Home</span>
+                                </a>
+                                <span class="breadcrumb-nav__separator" aria-hidden="true">›</span>
+                                <a href="user_profile.html">Danh sách đơn hàng</a>
+                            </nav>
+                        </div>
+
+                        <div class='block_wrap row profile_block'>
+                            <div class='col-11'>
+                                <p class='section__title'>Danh sách đơn hàng</p>
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>STT</th>
+                                        <th>Ngày đặt hàng</th>
+                                        <th>Coupon</th>
+                                        <th>Tổng tiền</th>
+                                        <th>Chi tiết hóa đơn</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>20-02-2018</td>
+                                        <td>GiamGia20</td>
+                                        <td>156.000 vnđ</td>
+                                        <td><div class='btn btn-primary btn-sm'>Chi tiết</div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>20-02-2018</td>
+                                        <td>GiamGia20</td>
+                                        <td>156.000 vnđ</td>
+                                        <td><div class='btn btn-primary btn-sm'>Chi tiết</div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>20-02-2018</td>
+                                        <td>GiamGia20</td>
+                                        <td>156.000 vnđ</td>
+                                        <td><div class='btn btn-primary btn-sm'>Chi tiết</div></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class='col-1'>
+
+                            </div>
+                        </div>
+                        <!--end-block_wrap-->
+                    </div>
+                    <!--end-main-content-->
+                </div>
+            </div>
+            <!--end-row-->
+        </div>
+        <!--end-wrapper-->
+
+        <div id='footer' class="">
+            Trungduy@1/2018
+        </div>
+    </div>
+    <script type="text/javascript" src='js/jquery.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script src='js/elevatezoom/jquery.elevatezoom.js'></script>
+    <script type="text/javascript" src='js/myscript.js'></script>
+</body>
+
+</html>
