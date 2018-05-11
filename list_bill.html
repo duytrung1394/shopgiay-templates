@@ -116,7 +116,7 @@
                         <div class="dropdown-nav popup__user-nav">
                             <ul>
                                 <li>
-                                    <a href="user_profile.html">Thông tin cá nhân</a>
+                                    <a href="user_profile.html" class='active'>Thông tin cá nhân</a>
                                 </li>
                                 <li>
                                     <a href="edit_password.html">Đổi mật khẩu</a>
@@ -249,44 +249,177 @@
                                 <p class='section__title'>Danh sách đơn hàng</p>
                                 <table class="table">
                                     <thead>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th>Ngày đặt hàng</th>
-                                        <th>Coupon</th>
-                                        <th>Tổng tiền</th>
-                                        <th>Chi tiết hóa đơn</th>
-                                      </tr>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Ngày đặt hàng</th>
+                                            <th>Coupon</th>
+                                            <th>Tổng tiền</th>
+                                            <th>Chi tiết hóa đơn</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>20-02-2018</td>
-                                        <td>GiamGia20</td>
-                                        <td>156.000 vnđ</td>
-                                        <td><div class='btn btn-primary btn-sm'>Chi tiết</div></td>
-                                      </tr>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>20-02-2018</td>
-                                        <td>GiamGia20</td>
-                                        <td>156.000 vnđ</td>
-                                        <td><div class='btn btn-primary btn-sm'>Chi tiết</div></td>
-                                      </tr>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>20-02-2018</td>
-                                        <td>GiamGia20</td>
-                                        <td>156.000 vnđ</td>
-                                        <td><div class='btn btn-primary btn-sm'>Chi tiết</div></td>
-                                      </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>20-02-2018</td>
+                                            <td>GiamGia20</td>
+                                            <td>156.000 vnđ</td>
+                                            <td>
+                                                <div class='btn btn-primary btn-sm' data-toggle="modal" data-target=".show-bills-modal">Chi tiết</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>20-02-2018</td>
+                                            <td>GiamGia20</td>
+                                            <td>156.000 vnđ</td>
+                                            <td>
+                                                <div class='btn btn-primary btn-sm' data-toggle="modal" data-target=".show-bills-modal">Chi tiết</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>20-02-2018</td>
+                                            <td>GiamGia20</td>
+                                            <td>156.000 vnđ</td>
+                                            <td>
+                                                <div class='btn btn-primary btn-sm' data-toggle="modal" data-target=".show-bills-modal">Chi tiết</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>20-02-2018</td>
+                                            <td>GiamGia20</td>
+                                            <td>156.000 vnđ</td>
+                                            <td>
+                                                <div class='btn btn-primary btn-sm' data-toggle="modal" data-target=".show-bills-modal">Chi tiết</div>
+                                            </td>
+                                        </tr>
                                     </tbody>
-                                  </table>
+                                </table>
                             </div>
                             <div class='col-1'>
 
                             </div>
                         </div>
                         <!--end-block_wrap-->
+                        <div class="modal fade show-bills-modal" id='myModal' tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Chi tiết đơn hàng</h5>
+                                        <button type="button" class="close btn__close-icon" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row user-info">
+                                                <div class='col-12'>
+                                                    <p>
+                                                        <label class='label-bold'> Email: </label>
+                                                        <span>trung.steam@gmail.com</span>
+                                                    </p>
+                                                </div>
+                                                <div class='col-md-6 col-sm-12'>
+                                                    <p>
+                                                        <label class='label-bold'> Họ: </label>
+                                                        <span>Lê Duy</span>
+                                                    </p>
+                                                </div>
+                                                <div class='col-md-6 col-sm-12'>
+                                                    <p>
+                                                        <label class='label-bold'> Tên: </label>
+                                                        <span>Trung</span>
+                                                    </p>
+                                                </div>
+                                                <div class='col-md-6 col-sm-12'>
+                                                    <p>
+                                                        <label class='label-bold'> Giới tính: </label>
+                                                        <span>Nam</span>
+                                                    </p>
+                                                </div>
+                                                <div class='col-md-6 col-sm-12'>
+                                                    <p>
+                                                        <label class='label-bold'> Số điện thoại: </label>
+                                                        <span>01655324324</span>
+                                                    </p>
+                                                </div>
+                                                <div class='col-12'>
+                                                    <p>
+                                                        <label class='label-bold'> Địa chỉ: </label>
+                                                        <span>Thành phố vinh tỉnh nghệ an</span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <table class='responsive-table table--no-border'>
+                                                    <thead class='cart__row small-hidden'>
+                                                        <tr>
+                                                            <th class="text-left cart__table-cell-image">Sản phẩm</th>
+                                                            <th class="text-center cart__table-cell--meta"></th>
+                                                            <th class="text-center cart__table-cell--price">Đơn giá</th>
+                                                            <th class="text-center cart__table-cell--quantity">Số lượng</th>
+                                                            <th class="text-right cart__table-cell--total-price">Tổng</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class='responsive-table__row'>
+                                                            <td class="text-left cart__table-cell-image">
+                                                                <img src="images/11.jpg" width='100%' />
+                                                            </td>
+                                                            <td class="cart__table-cell--meta small--text-center">
+                                                                <p>
+                                                                    <a href="detail.html">
+                                                                        <h6>EVERYN SHOES</h6>
+                                                                    </a>
+                                                                    <small>Size: 35</small>
+                                                                </p>
+
+                                                            </td>
+                                                            <td class="cart__table-cell--price medium-up--text-center" data-label='Đơn giá'>180,000 vnđ</td>
+                                                            <td class='cart__table-cell--quantity medium-up--text-center' data-label='Số lượng'>
+                                                                <span>4</span>
+                                                            </td>
+                                                            <td class='cart__table-cell--quantity text-right' data-label="Tổng">180,000 vnđ</td>
+                                                        </tr>
+                                                        <tr class='responsive-table__row'>
+                                                            <td class="text-left cart__table-cell-image">
+                                                                <img src="images/14.jpg" width='100%' />
+                                                            </td>
+                                                            <td class="cart__table-cell--meta small--text-center">
+                                                                <p>
+                                                                    <a href="detail.html">
+                                                                        <h6>Biti&#039;s Hunter Nam Black</h6>
+                                                                    </a>
+                                                                    <small>Size: 39</small>
+                                                                </p>
+
+                                                            </td>
+                                                            <td class="cart__table-cell--price medium-up--text-center" data-label='Đơn giá'>680,000 vnđ</td>
+                                                            <td class='cart__table-cell--quantity medium-up--text-center' data-label='Số lượng'>
+                                                                <span>4</span>
+                                                            </td>
+                                                            <td class='cart__table-cell--quantity text-right' data-label="Tổng">680,000 vnđ</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class='cart-footer text-right'>
+                                                    <p class='small--text-center'>
+                                                        <span>Tổng tiền: </span>
+                                                        <span class='span__total_price'>860,000 vnđ</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--modal-body-->
+                                </div>
+                                <!--modal-content-->
+                            </div>
+                        </div>
+                        <!--end-modal-->
                     </div>
                     <!--end-main-content-->
                 </div>
