@@ -559,9 +559,8 @@ hr.hr--border-cart-popup{
     margin-bottom: 10px;
 }
 select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-        background-image: url('../images/arrow.png');
+    appearance: none;
+    background-image: url('../images/arrow.png');
     background-repeat: no-repeat;
     background-position: right 7px center;
     padding-right: 28px;
@@ -1407,4 +1406,10 @@ p.login-title{
 }
 .user-info p{
 	margin-bottom: 8px;
+}
+.p__total_item{
+    font-size: 0.95em;
+}
+.p__total_item span{
+    font-weight: 600;
 }
